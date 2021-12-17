@@ -1,12 +1,21 @@
+/* 
+ * Full Name        : Abdulhakeem Idris
+ * StudentID        : 101278361
+ * Date Modified    : December 17, 2021
+ * File             : FloatingPlatformController.cs
+ * Description      : This script controls the floating Platform
+ * Revision History : Version01
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FloatingPlatformController : MonoBehaviour
 {
-    public PlayerBehaviour player;
+    PlayerBehaviour player;
     float platformTimer = 0f;
-    public float ScaleReductionSpeed = 1f;
+    public float ScaleSpeed = 1f;
     public float ActivateTimer = 2f;
     bool shrinkActivate = false;
 
@@ -34,7 +43,7 @@ public class FloatingPlatformController : MonoBehaviour
         if(shrinkActivate == true)
         {
             Vector3 newScale = transform.localScale;
-            newScale.x -= Time.deltaTime * ScaleReductionSpeed;
+            newScale.x -= Time.deltaTime * ScaleSpeed;
             if (transform.localScale.x > 0f)
             {
                 player.sounds[(int)ImpulseSounds.FlOATINGPLATFORM].Play();
@@ -44,7 +53,7 @@ public class FloatingPlatformController : MonoBehaviour
         else if (shrinkActivate == false)
         {
             Vector3 newScale = transform.localScale;
-            newScale.x += Time.deltaTime * ScaleReductionSpeed;
+            newScale.x += Time.deltaTime * ScaleSpeed;
             if (transform.localScale.x < 1f)
             {
                 transform.localScale = newScale;
