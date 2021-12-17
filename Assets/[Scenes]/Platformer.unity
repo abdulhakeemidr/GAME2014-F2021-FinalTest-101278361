@@ -4910,7 +4910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 127.19, y: 11.96}
+  m_AnchoredPosition: {x: -6, y: -0.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &554017808
@@ -6127,7 +6127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720188938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 134.33, y: 12.49, z: 0}
+  m_LocalPosition: {x: 1.1400003, y: -0.26999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1675891084}
@@ -23566,7 +23566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371695376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: -10}
+  m_LocalPosition: {x: 0, y: -0.5000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1178153104}
@@ -24294,8 +24294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d1a06a95ff70d45ad5e9df1265f7ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  ScaleReductionSpeed: 0.2
+  ScaleSpeed: 1
   ActivateTimer: 2
 --- !u!61 &1507244286
 BoxCollider2D:
@@ -24403,8 +24402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d1a06a95ff70d45ad5e9df1265f7ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  ScaleReductionSpeed: 0.1
+  ScaleSpeed: 1
   ActivateTimer: 2
 --- !u!4 &1548052357 stripped
 Transform:
