@@ -15,7 +15,8 @@ public enum ImpulseSounds
     HIT3,
     DIE,
     THROW,
-    GEM
+    GEM,
+    FlOATINGPLATFORM
 }
 
 public class PlayerBehaviour : MonoBehaviour
